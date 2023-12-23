@@ -11,7 +11,7 @@ bsc_string bsc_initString()
     size_t defaultSize = 3;
     char* buffer = (char*)malloc(CHAR_SIZE * defaultSize);
     if(buffer != NULL){
-        buffer[0] = '\0';
+        buffer[defaultSize-1] = '\0';
     }
     bsc_string ret;
     ret.character_buffer = buffer;
