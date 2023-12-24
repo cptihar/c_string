@@ -202,7 +202,7 @@ void bsc_strInsert(char **character_buffer, size_t position, char value)
 
     if(position > buffer_length) return;
 
-    char* newBuffer = (char*)malloc(CHAR_SIZE * (buffer_length + 2));
+    char* newBuffer = (char*)malloc(CHAR_SIZE * (buffer_length + 1));
     if(newBuffer !=  NULL){
         memmove(newBuffer, *character_buffer, position);
         newBuffer[position] = value;
