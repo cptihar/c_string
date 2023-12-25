@@ -2,7 +2,7 @@
 
 /**************************************************
     Initializes a bsc_string struct
-        -> Creates basic char buffer with size 0
+        -> Creates basic char buffer with size 3
         -> Has '\0'
     Return: bsc_string
 **************************************************/
